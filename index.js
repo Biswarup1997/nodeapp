@@ -3,9 +3,14 @@ const ip=require('ip');
 const app=express();
 
 app.get('/ping',(req,res)=>{
+
     res.json({
            message:'pong',
            serverAddress:ip.address()});
+
+    res.json({message:'pong',
+            serverAddress:ip.address()});
+
     });
     
 
